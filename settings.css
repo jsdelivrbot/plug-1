@@ -1,0 +1,175 @@
+/* Changes to the the header should be done here. */
+
+.app-header, #rs-skip-button, #history-button {
+background-color: rgb(23, 26, 55);
+}
+
+/* Changes to the chat and messages should be done here.*/
+#chat, #chat-input {
+background-color: rgb(16, 17, 37);
+}
+
+.msg {
+background: linear-gradient(to bottom,rgb(23, 26, 55),black);
+}
+
+/* Background image */
+.room-background {
+background: url(https://raw.githubusercontent.com/Leixander/test/master/popheadsbg2.png) no-repeat!important;
+}
+
+/* Changed the footer color and the footer text color. */
+#footer {
+background-color: rgb(32, 20, 39);
+color: rgb(250, 233, 241);
+}
+
+/* All the icons, i.e. woot being cool fish and the PH icon next to plug icon at top left.*/
+
+.icon {
+background-image: url("https://raw.githubusercontent.com/Leixander/test/master/sprites5.png");
+}
+
+/* This portion removes the name of the room and changes it with the popheads logo.*/
+
+#room-name span {
+display: none;
+}
+#room-name {
+content:url(https://cdn.discordapp.com/attachments/250314239724486658/393862392792088577/popheadslogo.png);
+}
+
+/** Changes the woot/grab/meh colors and the border radius of the vote box*/
+/* for woot */
+#woot {
+border-radius: 50px 0 0 50px;
+}
+#vote > #woot.crowd-response.selected{
+  background-color: rgba(30, 204, 118, 1) !important;
+
+}
+#vote > #woot.crowd-response .bottom{
+background-color: rgba(15, 132, 74, 1) !important;
+border-radius: 0px 0px 0px 50px;
+}
+#vote > #woot.crowd-response.active .bottom{
+background-color: rgba(15, 132, 74, 1) !important;
+
+} 
+.votes-rs .title.woot {
+background-color: rgba(15, 132, 74, 1)!important;
+}
+
+/* for grab */
+#vote > #grab.crowd-response.selected {
+  background-color: rgb(133, 89, 163) !important;
+}
+#vote > #grab.crowd-response .bottom{
+  background-color: rgb(91, 58, 114) !important;
+}
+#vote > #grab.crowd-response.active .bottom{
+  background-color: rgb(91, 58, 114) !important;
+}
+.votes-rs .title.grab {
+background-color: rgb(91, 58, 114)!important;
+}
+
+/* for meh */
+#meh {
+border-radius: 0 50px 50px 0;
+}
+.votes-rs .title.meh {
+background-color: rgb(102, 17, 30)!important;
+}
+#vote > #meh.crowd-response.selected {
+  background-color: rgb(165, 38, 57) !important;
+
+}   
+#vote > #meh.crowd-response .bottom{
+  background-color: rgb(102, 17, 30) !important;
+border-radius: 0px 0px 50px 0px;
+}
+
+#vote > #meh.crowd-response.active .bottom{
+  background-color: rgb(102, 17, 30) !important;
+
+} 
+
+/*Remove box shadow and gradient on selected items*/
+#vote > .crowd-response.selected{
+  box-shadow: none !Important;
+}
+
+/* Made dj buttons round. Remove this code if you want to turn them into default state*/
+#dj-button, #dj-button.is-leave { 
+	border-radius: 100px 100px 100px 100px;
+}
+#dj-button .left {
+	border-radius: 100px 100px 100px 100px;
+}
+.icon-chat-dj {
+filter = hue-rotate(60deg);
+}
+
+/* user colours in chat */
+
+/* had to add site mod,promoter and subscriber here since !important in other code overrides the original color*/
+
+#chat .from.promoter .un,  #user-lists .list.room .user.role-promoter .name,#user-rollover.is-promoter .thumb, #user-rollover.is-promoter .username {
+color: #1abc9c!important;
+border-color: #1abc9c!important;
+}
+
+#chat .from.sitemod .un, #user-lists .list.room .user.role-sitemod .name, #user-rollover.is-sitemod .thumb, #user-rollover.is-sitemod .username {
+color: #e74c3c!important;
+border-color: #e74c3c!important; 
+}
+
+#chat .from.subscriber .un, #user-lists .list.room .user.is-subscriber .name, #user-rollover .is-subscriber .username, #user-rollover .is-subscriber .thumb, #waitlist .is-subscriber .thumb {
+color: #c59840!important;
+border-color: #c59840!important;
+}
+
+#chat .role-cohost .un, #user-lists .list.room .user.role-cohost .name, #waitlist .list .user .name .icon-chat-cohost + span, #user-rollover.role-cohost .username, #user-rollover.role-cohost .thumb, #waitlist .role-cohost .thumb, #user-rollover.role-cohost .info .role span {
+color: rgb(204,216,217)!important;
+border-color: rgb(204,216,217)!important;
+}
+
+#chat .role-manager .un, #user-lists .list.room .user.role-manager .name, #waitlist .list .user .name .icon-chat-manager + span, #user-rollover.role-manager .username, #user-rollover.role-manager .thumb, #waitlist .role-manager .thumb, #user-rollover.role-manager .info .role span {
+color: rgb(168,191,199)!important;
+border-color: rgb(168,191,199)!important;
+}
+
+#chat .role-bouncer .un, #user-lists .list.room .user.role-bouncer .name, #waitlist .list .user .name .icon-chat-bouncer + span, #user-rollover.role-bouncer .username, #user-rollover.role-bouncer .thumb, #waitlist .role-bouncer .thumb, #user-rollover.role-bouncer .info .role span {
+color: rgb(233,195,4)!important;
+border-color: rgb(233,195,4)!important;
+}
+
+#chat .role-dj .un, #user-lists .list.room .user.role-dj .name, #waitlist .list .user .name .icon-chat-dj + span, #user-rollover.role-dj .username, #user-rollover.role-dj .thumb, #waitlist .role-dj .thumb, #user-rollover.role-dj .info .role span { 
+color: rgb(104,120,255)!important;
+border-color: rgb(104,120,255)!important;
+}
+
+#chat .un, #user-lists .list.room .name, #user-rollover .username, #user-rollover .thumb { /* for non-staff */
+color: rgb(88, 135, 183)!important;
+border-color: rgb(88, 135, 183)!important;
+}
+
+#user-lists .list .user .name { /* for the staff names in the staff tab*/
+color: rgb(88, 135, 183);
+}
+
+/* mention gradient */
+#chat .mention .msg {
+background: linear-gradient(to bottom,rgba(255,118,118,0) ,black)!important;
+}
+
+/*Uninplemented feature: Make selected grab/meh/woot bottom transparent
+#vote > #woot.crowd-response.selected .bottom,
+#vote > #woot.crowd-response.disabled.active .bottom,
+#vote > #grab.crowd-response.selected .bottom,
+#vote > #grab.crowd-response.disabled.active .bottom,
+#vote > #meh.crowd-response.selected .bottom,
+#vote > #meh.crowd-response.disabled.active .bottom{
+  background-color: transparent !important;
+}*/
