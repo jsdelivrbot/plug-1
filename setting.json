@@ -1,0 +1,15 @@
+{
+    "room": "popheads",
+    "author": "Leixander",
+    "css": "https://raw.githubusercontent.com/Leixander/roomCSS/master/main.css",
+    "rules": {
+        "allowAutorespond": false,
+        "allowAutowoot": true,
+        "allowAutojoin": false,
+        "allowAutograb": true,
+        "allowSmartVote": true,
+        "allowEmotes": true,
+        "allowShowingMehs": false,
+        "forceSmartVote": false
+    }
+}
